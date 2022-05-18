@@ -1,0 +1,50 @@
+* {
+    outline: 1px red solid;
+    border-radius: 5px;
+}
+
+.player_sheet_mini {
+    background-color: cornsilk;
+    display: flex;
+
+    .main_info_container {
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 20vw;
+        min-height: 20vh;
+
+        .player_characteristics {
+            background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+
+            .name_and_class {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .level_and_exp {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.battle_info {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+
+    .hp_and_ac {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .initiative_and_inspiration {
+        display: flex;
+        justify-content: space-between;
+    }
+}

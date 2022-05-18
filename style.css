@@ -1,0 +1,44 @@
+* {
+  outline: 1px red solid;
+  border-radius: 5px;
+}
+
+.player_sheet_mini {
+  background-color: cornsilk;
+  display: flex;
+}
+.player_sheet_mini .main_info_container {
+  background-color: darkgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20vw;
+  min-height: 20vh;
+}
+.player_sheet_mini .main_info_container .player_characteristics {
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+}
+.player_sheet_mini .main_info_container .player_characteristics .name_and_class {
+  display: flex;
+  justify-content: space-between;
+}
+.player_sheet_mini .main_info_container .player_characteristics .level_and_exp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.battle_info {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+.battle_info .hp_and_ac {
+  display: flex;
+  justify-content: space-between;
+}
+.battle_info .initiative_and_inspiration {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
