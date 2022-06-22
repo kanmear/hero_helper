@@ -1,33 +1,62 @@
 * {
-    outline: 1px red solid;
-    border-radius: 5px;
+    // outline: 1px red solid;
+    // border-radius: 5px;
+    font-family: Garamond;
+
+    // background-color: black;
+    color: white;
+}
+
+body {
+    background-color: black;
 }
 
 .player_sheet_mini {
-    background-color: cornsilk;
+    // outline: 1px red solid;
+
     display: flex;
 
     .main_info_container {
-        background-color: darkgrey;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        background-color: darkslategray;
+        border: 2px solid #99ccff;
+        border-radius: 8px;
+
         min-width: 20vw;
         min-height: 20vh;
 
+        margin: 5px;
+        padding: 3px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         .player_characteristics {
-            background-color: burlywood;
             display: flex;
             flex-direction: column;
 
             .name_and_class {
+                background-color: #708090;
+
                 display: flex;
                 justify-content: space-between;
+
+                .player_name,
+                .player_class {
+                    margin: 1px 3px;
+                }
             }
 
             .level_and_exp {
+                background-color: #778899;
+
                 display: flex;
                 justify-content: space-between;
+
+                .level,
+                .exp {
+                    margin: 1px 3px;
+                }
             }
         }
     }
@@ -35,16 +64,38 @@
 
 .battle_info {
     background-color: aquamarine;
+
     display: flex;
     flex-direction: column;
 
     .hp_and_ac {
+        background-color: #708090;
+
         display: flex;
         justify-content: space-between;
+
+        .hitpoints,
+        .armor_class {
+            margin: 1px 3px;
+        }
     }
 
     .initiative_and_inspiration {
+        background-color: #778899;
+
         display: flex;
         justify-content: space-between;
+
+        span {
+            margin: 1px 3px;
+        }
+    }
+
+    .speed {
+        background-color: #708090;
+
+        span {
+            margin: 1px 3px;
+        }
     }
 }

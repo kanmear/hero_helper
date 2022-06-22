@@ -1,32 +1,48 @@
 * {
-  outline: 1px red solid;
-  border-radius: 5px;
+  font-family: Garamond;
+  color: white;
+}
+
+body {
+  background-color: black;
 }
 
 .player_sheet_mini {
-  background-color: cornsilk;
   display: flex;
 }
 .player_sheet_mini .main_info_container {
-  background-color: darkgrey;
+  background-color: darkslategray;
+  border: 2px solid #99ccff;
+  border-radius: 8px;
+  min-width: 20vw;
+  min-height: 20vh;
+  margin: 5px;
+  padding: 3px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 20vw;
-  min-height: 20vh;
 }
 .player_sheet_mini .main_info_container .player_characteristics {
-  background-color: burlywood;
   display: flex;
   flex-direction: column;
 }
 .player_sheet_mini .main_info_container .player_characteristics .name_and_class {
+  background-color: #708090;
   display: flex;
   justify-content: space-between;
 }
+.player_sheet_mini .main_info_container .player_characteristics .name_and_class .player_name,
+.player_sheet_mini .main_info_container .player_characteristics .name_and_class .player_class {
+  margin: 1px 3px;
+}
 .player_sheet_mini .main_info_container .player_characteristics .level_and_exp {
+  background-color: #778899;
   display: flex;
   justify-content: space-between;
+}
+.player_sheet_mini .main_info_container .player_characteristics .level_and_exp .level,
+.player_sheet_mini .main_info_container .player_characteristics .level_and_exp .exp {
+  margin: 1px 3px;
 }
 
 .battle_info {
@@ -35,10 +51,25 @@
   flex-direction: column;
 }
 .battle_info .hp_and_ac {
+  background-color: #708090;
   display: flex;
   justify-content: space-between;
 }
+.battle_info .hp_and_ac .hitpoints,
+.battle_info .hp_and_ac .armor_class {
+  margin: 1px 3px;
+}
 .battle_info .initiative_and_inspiration {
+  background-color: #778899;
   display: flex;
   justify-content: space-between;
+}
+.battle_info .initiative_and_inspiration span {
+  margin: 1px 3px;
+}
+.battle_info .speed {
+  background-color: #708090;
+}
+.battle_info .speed span {
+  margin: 1px 3px;
 }/*# sourceMappingURL=style.css.map */
