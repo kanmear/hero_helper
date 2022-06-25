@@ -1,0 +1,101 @@
+* {
+  font-family: Garamond;
+  color: white;
+}
+
+body {
+  background-color: #000111;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  gap: 1vh;
+}
+
+.display {
+  height: 73vh;
+  border: 2px solid #123c69;
+}
+
+.cards_container {
+  height: 23vh;
+  border: 2px solid #123c69;
+}
+
+.player_sheet_mini {
+  display: flex;
+}
+.player_sheet_mini .main_info_container {
+  background-color: #edc7b7;
+  border: 2px solid #123c69;
+  border-radius: 8px;
+  min-width: 20vw;
+  min-height: 20vh;
+  margin: 5px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.player_sheet_mini .main_info_container .player_characteristics {
+  display: flex;
+  flex-direction: column;
+}
+.player_sheet_mini .main_info_container .player_characteristics .name_and_class {
+  background-color: #708090;
+  display: flex;
+  justify-content: space-between;
+}
+.player_sheet_mini .main_info_container .player_characteristics .name_and_class .player_name,
+.player_sheet_mini .main_info_container .player_characteristics .name_and_class .player_class {
+  margin: 1px 3px;
+}
+.player_sheet_mini .main_info_container .player_characteristics .level_and_exp {
+  background-color: #778899;
+  display: flex;
+  justify-content: space-between;
+}
+.player_sheet_mini .main_info_container .player_characteristics .level_and_exp .level,
+.player_sheet_mini .main_info_container .player_characteristics .level_and_exp .exp {
+  margin: 1px 3px;
+}
+.player_sheet_mini .battle_info {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+.player_sheet_mini .battle_info .hp_and_ac {
+  background-color: #708090;
+  display: flex;
+  justify-content: space-between;
+}
+.player_sheet_mini .battle_info .hp_and_ac .hitpoints,
+.player_sheet_mini .battle_info .hp_and_ac .armor_class {
+  margin: 1px 3px;
+}
+.player_sheet_mini .battle_info .initiative_and_inspiration {
+  background-color: #778899;
+  display: flex;
+  justify-content: space-between;
+}
+.player_sheet_mini .battle_info .initiative_and_inspiration span {
+  margin: 1px 3px;
+}
+.player_sheet_mini .battle_info .speed {
+  background-color: #708090;
+}
+.player_sheet_mini .battle_info .speed span {
+  margin: 1px 3px;
+}
+
+.player_sheet_full {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}/*# sourceMappingURL=style.css.map */
