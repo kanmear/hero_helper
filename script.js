@@ -1,6 +1,6 @@
 const cardMini = document.querySelector('.player_sheet_mini');
 cardMini.addEventListener('click', revealFullCard);
-const cardFull = document.querySelector('.player_sheet_full');
+const cardFull = document.querySelector('.player_sheet_full_container');
 cardFull.addEventListener('click', (e) => hideFullCard(e));
 
 function hideFullCard(keyevent) {
@@ -9,7 +9,7 @@ function hideFullCard(keyevent) {
 }
 
 function revealFullCard() {
-    cardFull.style.display = 'flex'
+    cardFull.style.display = 'block';
 }
 
 function createPlayerCardMini() {

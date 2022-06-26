@@ -1,14 +1,18 @@
 * {
   font-family: Garamond;
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
 body {
   background-color: #000111;
+  height: 100%;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  gap: 1vh;
+  gap: 8px;
 }
 
 .display {
@@ -19,6 +23,7 @@ body {
 .cards_container {
   height: 23vh;
   border: 2px solid #123c69;
+  display: flex;
 }
 
 .player_sheet_mini {
@@ -28,8 +33,8 @@ body {
   background-color: #edc7b7;
   border: 2px solid #123c69;
   border-radius: 8px;
-  min-width: 20vw;
-  min-height: 20vh;
+  min-width: 18vw;
+  min-height: 18vh;
   margin: 5px;
   padding: 3px;
   display: flex;
@@ -37,11 +42,13 @@ body {
   justify-content: space-between;
 }
 .player_sheet_mini .main_info_container .player_characteristics {
+  border: 2px solid #123c69;
+  background-color: #708090;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
 }
 .player_sheet_mini .main_info_container .player_characteristics .name_and_class {
-  background-color: #708090;
   display: flex;
   justify-content: space-between;
 }
@@ -51,6 +58,8 @@ body {
 }
 .player_sheet_mini .main_info_container .player_characteristics .level_and_exp {
   background-color: #778899;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   display: flex;
   justify-content: space-between;
 }
@@ -59,11 +68,14 @@ body {
   margin: 1px 3px;
 }
 .player_sheet_mini .battle_info {
-  background-color: aquamarine;
+  border: 2px solid #123c69;
+  border-radius: 8px;
+  background-color: #708090;
   display: flex;
   flex-direction: column;
 }
 .player_sheet_mini .battle_info .hp_and_ac {
+  border-radius: 8px;
   background-color: #708090;
   display: flex;
   justify-content: space-between;
@@ -81,21 +93,53 @@ body {
   margin: 1px 3px;
 }
 .player_sheet_mini .battle_info .speed {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   background-color: #708090;
 }
 .player_sheet_mini .battle_info .speed span {
   margin: 1px 3px;
 }
 
-.player_sheet_full {
-  display: none;
+.player_sheet_full_container {
   position: fixed;
   z-index: 1;
   left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+}
+.player_sheet_full_container .player_sheet_full {
+  width: 98.5vw;
+  height: 97.5vh;
+  margin: 1vh auto;
+  border: 2px solid #123c69;
+}
+.player_sheet_full_container .player_sheet_full .main_info {
+  display: flex;
+  flex-direction: column;
+}
+.player_sheet_full_container .player_sheet_full .main_info .name_class_race {
+  min-width: 60vw;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.player_sheet_full_container .player_sheet_full .main_info .name_class_race .name_field,
+.player_sheet_full_container .player_sheet_full .main_info .name_class_race .class_field,
+.player_sheet_full_container .player_sheet_full .main_info .name_class_race .race_field {
+  min-width: 10vw;
+  display: inline-block;
+}
+.player_sheet_full_container .player_sheet_full .main_info .level_exp {
+  margin-left: auto;
+  min-width: 60vw;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
