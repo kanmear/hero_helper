@@ -142,7 +142,7 @@ body {
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.8);
 
-    display: none;
+    display: block;
     flex-direction: column;
 
     .player_sheet_full {
@@ -151,6 +151,9 @@ body {
         margin: 1vh auto;
 
         border: 2px solid #123c69;
+
+        display: flex;
+        flex-direction: column;
 
         .main_info {
             display: flex;
@@ -177,6 +180,24 @@ body {
                 min-width: 60vw;
 
                 display: inline-block;
+            }
+        }
+
+        .info_container {
+            display: flex;
+
+            .stats_and_skills_column {
+                display: flex;
+                flex-direction: column;
+
+                .stats>div {
+                    border: 2px solid red;
+
+                    width: 100px;
+                    height: 100px;
+
+                    text-align: center;
+                }
             }
         }
     }

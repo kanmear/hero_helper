@@ -113,7 +113,7 @@ body {
   overflow: auto;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+  display: block;
   flex-direction: column;
 }
 .player_sheet_full_container .player_sheet_full {
@@ -121,6 +121,8 @@ body {
   height: 97.5vh;
   margin: 1vh auto;
   border: 2px solid #123c69;
+  display: flex;
+  flex-direction: column;
 }
 .player_sheet_full_container .player_sheet_full .main_info {
   display: flex;
@@ -142,4 +144,17 @@ body {
   margin-left: auto;
   min-width: 60vw;
   display: inline-block;
+}
+.player_sheet_full_container .player_sheet_full .info_container {
+  display: flex;
+}
+.player_sheet_full_container .player_sheet_full .info_container .stats_and_skills_column {
+  display: flex;
+  flex-direction: column;
+}
+.player_sheet_full_container .player_sheet_full .info_container .stats_and_skills_column .stats > div {
+  border: 2px solid red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
