@@ -150,11 +150,25 @@ body {
 }
 .player_sheet_full_container .player_sheet_full .info_container .stats_and_skills_column {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .player_sheet_full_container .player_sheet_full .info_container .stats_and_skills_column .stats > div {
   border: 2px solid red;
   width: 100px;
   height: 100px;
   text-align: center;
+}
+.player_sheet_full_container .player_sheet_full .info_container .proficiency_bonus {
+  display: flex;
+  align-items: center;
+}
+.player_sheet_full_container .player_sheet_full .info_container .proficiency_bonus span {
+  display: flex;
+  align-items: center;
+}
+.player_sheet_full_container .player_sheet_full .info_container .proficiency_bonus .proficiency_field {
+  border: 2px solid red;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

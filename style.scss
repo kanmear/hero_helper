@@ -188,7 +188,7 @@ body {
 
             .stats_and_skills_column {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
 
                 .stats>div {
                     border: 2px solid red;
@@ -197,6 +197,26 @@ body {
                     height: 100px;
 
                     text-align: center;
+                }
+            }
+
+            .proficiency_bonus {
+                display: flex;
+                align-items: center;
+
+                span {
+
+                    display: flex;
+                    align-items: center;
+                }
+
+                .proficiency_field {
+                    border: 2px solid red;
+
+                    width: 20px;
+                    height: 20px;
+
+                    display: inline-block;
                 }
             }
         }
