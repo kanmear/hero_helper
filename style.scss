@@ -152,71 +152,117 @@ body {
 
         border: 2px solid #123c69;
 
-        display: flex;
-        flex-direction: column;
+        .sheet_container {
+            padding: 1vh 1vw;
 
-        .main_info {
             display: flex;
             flex-direction: column;
+            gap: 2vh;
 
-            .name_class_race {
-                min-width: 60vw;
-                margin-left: auto;
+            .main_info {
+                border: 2px solid red;
 
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
 
-                .name_field,
-                .class_field,
-                .race_field {
-                    min-width: 10vw;
-
-                    display: inline-block;
-                }
-            }
-
-            .level_exp {
-                margin-left: auto;
-                min-width: 60vw;
-
-                display: inline-block;
-            }
-        }
-
-        .info_container {
-            display: flex;
-
-            .stats_and_skills_column {
-                display: flex;
-                flex-direction: row;
-
-                .stats>div {
-                    border: 2px solid red;
-
-                    width: 100px;
-                    height: 100px;
-
-                    text-align: center;
-                }
-            }
-
-            .proficiency_bonus {
-                display: flex;
-                align-items: center;
-
-                span {
+                .name_class_race {
+                    min-width: 60vw;
+                    margin-left: auto;
 
                     display: flex;
-                    align-items: center;
+                    justify-content: space-between;
+
+                    .name_field,
+                    .class_field,
+                    .race_field {
+                        min-width: 10vw;
+
+                        display: inline-block;
+                    }
                 }
 
-                .proficiency_field {
-                    border: 2px solid red;
-
-                    width: 20px;
-                    height: 20px;
+                .level_exp {
+                    margin-left: auto;
+                    min-width: 60vw;
 
                     display: inline-block;
+                }
+            }
+
+            .info_container {
+                display: flex;
+
+                .stats_and_skills {
+                    display: flex;
+                    gap: 2vw;
+
+                    .stats_column {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1vw;
+
+                    }
+
+                    .stats_column>div {
+                        border: 2px solid red;
+
+                        width: 100px;
+                        height: 100px;
+
+                        text-align: center;
+                    }
+
+                    .skills_column {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2vh;
+
+                        .inspiration_container {
+
+                            .inspiration {
+                                display: flex;
+                                align-items: center;
+                                gap: 1vw;
+
+                                span {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                .inspiration_field {
+                                    border: 2px solid red;
+
+                                    width: 20px;
+                                    height: 20px;
+
+                                    display: inline-block;
+                                }
+                            }
+                        }
+
+                        .proficiency_container {
+
+                            .proficiency_bonus {
+                                display: flex;
+                                align-items: center;
+                                gap: 1vw;
+
+                                span {
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                .proficiency_field {
+                                    border: 2px solid red;
+
+                                    width: 20px;
+                                    height: 20px;
+
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

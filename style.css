@@ -121,52 +121,83 @@ body {
   height: 97.5vh;
   margin: 1vh auto;
   border: 2px solid #123c69;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container {
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info {
+  border: 2px solid red;
   display: flex;
   flex-direction: column;
 }
-.player_sheet_full_container .player_sheet_full .main_info {
-  display: flex;
-  flex-direction: column;
-}
-.player_sheet_full_container .player_sheet_full .main_info .name_class_race {
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race {
   min-width: 60vw;
   margin-left: auto;
   display: flex;
   justify-content: space-between;
 }
-.player_sheet_full_container .player_sheet_full .main_info .name_class_race .name_field,
-.player_sheet_full_container .player_sheet_full .main_info .name_class_race .class_field,
-.player_sheet_full_container .player_sheet_full .main_info .name_class_race .race_field {
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race .name_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race .class_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race .race_field {
   min-width: 10vw;
   display: inline-block;
 }
-.player_sheet_full_container .player_sheet_full .main_info .level_exp {
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .level_exp {
   margin-left: auto;
   min-width: 60vw;
   display: inline-block;
 }
-.player_sheet_full_container .player_sheet_full .info_container {
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container {
   display: flex;
 }
-.player_sheet_full_container .player_sheet_full .info_container .stats_and_skills_column {
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills {
   display: flex;
-  flex-direction: row;
+  gap: 2vw;
 }
-.player_sheet_full_container .player_sheet_full .info_container .stats_and_skills_column .stats > div {
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .stats_column {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .stats_column > div {
   border: 2px solid red;
   width: 100px;
   height: 100px;
   text-align: center;
 }
-.player_sheet_full_container .player_sheet_full .info_container .proficiency_bonus {
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .inspiration_container .inspiration {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .inspiration_container .inspiration span {
   display: flex;
   align-items: center;
 }
-.player_sheet_full_container .player_sheet_full .info_container .proficiency_bonus span {
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .inspiration_container .inspiration .inspiration_field {
+  border: 2px solid red;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .proficiency_container .proficiency_bonus {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .proficiency_container .proficiency_bonus span {
   display: flex;
   align-items: center;
 }
-.player_sheet_full_container .player_sheet_full .info_container .proficiency_bonus .proficiency_field {
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .proficiency_container .proficiency_bonus .proficiency_field {
   border: 2px solid red;
   width: 20px;
   height: 20px;
