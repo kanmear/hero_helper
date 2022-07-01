@@ -202,4 +202,25 @@ body {
   width: 20px;
   height: 20px;
   display: inline-block;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws div {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws div > .strength_throw_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws .dexterity_throw_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws .constitution_throw_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws .intelligence_throw_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws .wisdom_throw_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws .charisma_throw_field {
+  border: 2px solid red;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

@@ -262,6 +262,32 @@ body {
                                 }
                             }
                         }
+
+                        .saving_throws {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1vw;
+
+                            div {
+                                display: flex;
+                                align-items: center;
+                                gap: 1vw;
+                            }
+
+                            div>.strength_throw_field,
+                            .dexterity_throw_field,
+                            .constitution_throw_field,
+                            .intelligence_throw_field,
+                            .wisdom_throw_field,
+                            .charisma_throw_field {
+                                border: 2px solid red;
+
+                                width: 20px;
+                                height: 20px;
+
+                                display: inline-block;
+                            }
+                        }
                     }
                 }
             }
