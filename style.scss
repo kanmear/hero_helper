@@ -1,3 +1,7 @@
+$custom_padding: 5px;
+$custom_gap_v: 2vh;
+$custom_gap_w: 2vw;
+
 * {
     // outline: 1px red solid;
     // border-radius: 5px;
@@ -143,7 +147,6 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
 
     display: block;
-    flex-direction: column;
 
     .player_sheet_full {
         width: 98.5vw;
@@ -151,6 +154,9 @@ body {
         margin: 1vh auto;
 
         border: 2px solid #123c69;
+
+        display: flex;
+        flex-direction: column;
 
         .sheet_container {
             padding: 1vh 1vw;
@@ -161,11 +167,16 @@ body {
 
             .main_info {
                 border: 2px solid red;
+                padding: 1vh 1vw;
 
                 display: flex;
                 flex-direction: column;
+                gap: 1vh;
 
                 .name_class_race {
+                    border: 2px solid red;
+                    padding: 1vh 1vw;
+
                     min-width: 60vw;
                     margin-left: auto;
 
@@ -182,6 +193,9 @@ body {
                 }
 
                 .level_exp {
+                    border: 2px solid red;
+                    padding: 1vh 1vw;
+
                     margin-left: auto;
                     min-width: 60vw;
 
@@ -197,27 +211,49 @@ body {
                     gap: 2vw;
 
                     .stats_column {
+                        border: 2px solid red;
+                        padding: 1vh 1vw;
+
                         display: flex;
                         flex-direction: column;
                         gap: 1vw;
-
                     }
 
                     .stats_column>div {
                         border: 2px solid red;
+                        padding-top: 0.5vh;
 
                         width: 100px;
                         height: 100px;
 
                         text-align: center;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .stats_column>div>div {
+                        border: 2px solid red;
+
+                        width: 40px;
+                        height: 20px;
+
+                        text-align: center;
                     }
 
                     .skills_column {
+                        border: 2px solid red;
+                        padding: 1vh 1vw;
+
                         display: flex;
                         flex-direction: column;
                         gap: 2vh;
 
                         .inspiration_container {
+                            border: 2px solid red;
+                            padding: 1vh 1vw;
 
                             .inspiration {
                                 display: flex;
@@ -241,6 +277,8 @@ body {
                         }
 
                         .proficiency_container {
+                            border: 2px solid red;
+                            padding: 1vh 1vw;
 
                             .proficiency_bonus {
                                 display: flex;
@@ -264,6 +302,9 @@ body {
                         }
 
                         .saving_throws {
+                            border: 2px solid red;
+                            padding: 1vh 1vw;
+
                             display: flex;
                             flex-direction: column;
                             gap: 1vw;

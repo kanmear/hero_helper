@@ -114,13 +114,14 @@ body {
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.8);
   display: block;
-  flex-direction: column;
 }
 .player_sheet_full_container .player_sheet_full {
   width: 98.5vw;
   height: 97.5vh;
   margin: 1vh auto;
   border: 2px solid #123c69;
+  display: flex;
+  flex-direction: column;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container {
   padding: 1vh 1vw;
@@ -130,10 +131,14 @@ body {
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .main_info {
   border: 2px solid red;
+  padding: 1vh 1vw;
   display: flex;
   flex-direction: column;
+  gap: 1vh;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race {
+  border: 2px solid red;
+  padding: 1vh 1vw;
   min-width: 60vw;
   margin-left: auto;
   display: flex;
@@ -146,6 +151,8 @@ body {
   display: inline-block;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .main_info .level_exp {
+  border: 2px solid red;
+  padding: 1vh 1vw;
   margin-left: auto;
   min-width: 60vw;
   display: inline-block;
@@ -158,20 +165,39 @@ body {
   gap: 2vw;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .stats_column {
+  border: 2px solid red;
+  padding: 1vh 1vw;
   display: flex;
   flex-direction: column;
   gap: 1vw;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .stats_column > div {
   border: 2px solid red;
+  padding-top: 0.5vh;
   width: 100px;
   height: 100px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .stats_column > div > div {
+  border: 2px solid red;
+  width: 40px;
+  height: 20px;
+  text-align: center;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column {
+  border: 2px solid red;
+  padding: 1vh 1vw;
   display: flex;
   flex-direction: column;
   gap: 2vh;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .inspiration_container {
+  border: 2px solid red;
+  padding: 1vh 1vw;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .inspiration_container .inspiration {
   display: flex;
@@ -187,6 +213,10 @@ body {
   width: 20px;
   height: 20px;
   display: inline-block;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .proficiency_container {
+  border: 2px solid red;
+  padding: 1vh 1vw;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .proficiency_container .proficiency_bonus {
   display: flex;
@@ -204,6 +234,8 @@ body {
   display: inline-block;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws {
+  border: 2px solid red;
+  padding: 1vh 1vw;
   display: flex;
   flex-direction: column;
   gap: 1vw;
