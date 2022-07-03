@@ -1,13 +1,13 @@
 $custom_padding: 5px;
-$custom_gap_v: 2vh;
+$custom_gap_h: 2vh;
 $custom_gap_w: 2vw;
 
 * {
     // outline: 1px red solid;
     // border-radius: 5px;
     font-family: Garamond;
-    margin: 0;
-    padding: 0;
+    // margin: 0;
+    // padding: 0;
 
     // background-color: black;
     color: white;
@@ -16,7 +16,7 @@ $custom_gap_w: 2vw;
 body {
     background-color: #000111;
     height: 100%;
-    margin: 8px;
+    // margin: 8px;
 
     display: flex;
     flex-direction: column;
@@ -140,7 +140,7 @@ body {
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 105vh; // TODO: find a more elegant solution
     overflow: auto;
 
     background-color: #000;
@@ -151,7 +151,7 @@ body {
     .player_sheet_full {
         width: 98.5vw;
         height: 97.5vh;
-        margin: 1vh auto;
+        margin: $custom_gap_h / 2 auto;
 
         border: 2px solid #123c69;
 
@@ -159,23 +159,23 @@ body {
         flex-direction: column;
 
         .sheet_container {
-            padding: 1vh 1vw;
+            padding: $custom_padding * 2;
 
             display: flex;
             flex-direction: column;
-            gap: 2vh;
+            gap: $custom_gap_h;
 
             .main_info {
                 border: 2px solid red;
-                padding: 1vh 1vw;
+                padding: $custom_padding;
 
                 display: flex;
                 flex-direction: column;
-                gap: 1vh;
+                gap: $custom_gap_h / 2;
 
                 .name_class_race {
                     border: 2px solid red;
-                    padding: 1vh 1vw;
+                    padding: $custom_padding;
 
                     min-width: 60vw;
                     margin-left: auto;
@@ -194,7 +194,7 @@ body {
 
                 .level_exp {
                     border: 2px solid red;
-                    padding: 1vh 1vw;
+                    padding: $custom_padding;
 
                     margin-left: auto;
                     min-width: 60vw;
@@ -204,27 +204,28 @@ body {
             }
 
             .info_container {
+                // border: 2px solid red;
                 display: flex;
 
                 .stats_and_skills {
                     display: flex;
-                    gap: 2vw;
+                    gap: $custom_gap_w;
 
                     .stats_column {
                         border: 2px solid red;
-                        padding: 1vh 1vw;
+                        padding: $custom_padding;
 
                         display: flex;
                         flex-direction: column;
-                        gap: 1vw;
+                        gap: $custom_gap_h / 2;
                     }
 
                     .stats_column>div {
                         border: 2px solid red;
-                        padding-top: 0.5vh;
+                        padding-top: $custom_padding / 3;
 
-                        width: 100px;
-                        height: 100px;
+                        width: 85px;
+                        height: 85px;
 
                         text-align: center;
 
@@ -245,20 +246,20 @@ body {
 
                     .skills_column {
                         border: 2px solid red;
-                        padding: 1vh 1vw;
+                        padding: $custom_padding;
 
                         display: flex;
                         flex-direction: column;
-                        gap: 2vh;
+                        gap: $custom_gap_h;
 
                         .inspiration_container {
                             border: 2px solid red;
-                            padding: 1vh 1vw;
+                            padding: $custom_padding;
 
                             .inspiration {
                                 display: flex;
                                 align-items: center;
-                                gap: 1vw;
+                                gap: $custom_gap_w / 2;
 
                                 span {
                                     display: flex;
@@ -278,12 +279,12 @@ body {
 
                         .proficiency_container {
                             border: 2px solid red;
-                            padding: 1vh 1vw;
+                            padding: $custom_padding;
 
                             .proficiency_bonus {
                                 display: flex;
                                 align-items: center;
-                                gap: 1vw;
+                                gap: $custom_gap_w / 2;
 
                                 span {
                                     display: flex;
@@ -303,16 +304,16 @@ body {
 
                         .saving_throws {
                             border: 2px solid red;
-                            padding: 1vh 1vw;
+                            padding: $custom_padding;
 
                             display: flex;
                             flex-direction: column;
-                            gap: 1vw;
+                            gap: $custom_gap_w / 2;
 
                             div {
                                 display: flex;
                                 align-items: center;
-                                gap: 1vw;
+                                gap: $custom_gap_w / 2;
                             }
 
                             div>.strength_throw_field,
