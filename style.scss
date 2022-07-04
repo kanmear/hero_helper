@@ -170,26 +170,48 @@ body {
                 padding: $custom_padding;
 
                 display: flex;
-                flex-direction: column;
+                justify-content: space-between;
                 gap: $custom_gap_h / 2;
 
-                .name_class_race {
+                .name_and_level {
                     border: 2px solid red;
                     padding: $custom_padding;
 
-                    min-width: 60vw;
-                    margin-left: auto;
-
+                    flex-grow: 1;
                     display: flex;
+                    flex-direction: column;
+                    gap: $custom_gap_h / 2;
+                }
+
+                .class_and_race {
+                    border: 2px solid red;
+                    padding: $custom_padding;
+
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .background_and_alignment {
+                    border: 2px solid red;
+                    padding: $custom_padding;
+
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
 
-                    .name_field,
-                    .class_field,
-                    .race_field {
-                        min-width: 10vw;
+                }
 
-                        display: inline-block;
-                    }
+                .class_field,
+                .race_field,
+                .background_field,
+                .alignment_field,
+                .name_field {
+                    min-width: 10vw;
+
+                    display: inline-block;
                 }
 
                 .level_exp {
@@ -197,7 +219,7 @@ body {
                     padding: $custom_padding;
 
                     margin-left: auto;
-                    min-width: 60vw;
+                    min-width: 65vw;
 
                     display: inline-block;
                 }

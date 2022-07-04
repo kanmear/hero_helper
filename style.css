@@ -130,20 +130,38 @@ body {
   border: 2px solid red;
   padding: 5px;
   display: flex;
+  justify-content: space-between;
+  gap: 1vh;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_and_level {
+  border: 2px solid red;
+  padding: 5px;
+  flex-grow: 1;
+  display: flex;
   flex-direction: column;
   gap: 1vh;
 }
-.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race {
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .class_and_race {
   border: 2px solid red;
   padding: 5px;
-  min-width: 60vw;
-  margin-left: auto;
+  flex-grow: 1;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
-.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race .name_field,
-.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race .class_field,
-.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_class_race .race_field {
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .background_and_alignment {
+  border: 2px solid red;
+  padding: 5px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .class_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .race_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .background_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .alignment_field,
+.player_sheet_full_container .player_sheet_full .sheet_container .main_info .name_field {
   min-width: 10vw;
   display: inline-block;
 }
@@ -151,7 +169,7 @@ body {
   border: 2px solid red;
   padding: 5px;
   margin-left: auto;
-  min-width: 60vw;
+  min-width: 65vw;
   display: inline-block;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container {
