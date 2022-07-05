@@ -140,7 +140,7 @@ body {
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 105vh; // TODO: find a more elegant solution
+    height: 100%;
     overflow: auto;
 
     background-color: #000;
@@ -329,6 +329,7 @@ body {
                             padding: $custom_padding;
 
                             display: flex;
+                            // display: none;
                             flex-direction: column;
                             gap: $custom_gap_w / 2;
 
