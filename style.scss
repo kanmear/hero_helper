@@ -239,7 +239,8 @@ body {
 
                         display: flex;
                         flex-direction: column;
-                        gap: $custom_gap_h / 2;
+                        justify-content: space-between;
+                        // gap: $custom_gap_h / 2;
                     }
 
                     .stats_column>div {
@@ -328,8 +329,8 @@ body {
                             border: 2px solid red;
                             padding: $custom_padding;
 
-                            display: flex;
-                            // display: none;
+                            // display: flex;
+                            display: none;
                             flex-direction: column;
                             gap: $custom_gap_w / 2;
 

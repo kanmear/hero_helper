@@ -184,7 +184,7 @@ body {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  justify-content: space-between;
 }
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .stats_column > div {
   border: 2px solid red;
@@ -251,7 +251,7 @@ body {
 .player_sheet_full_container .player_sheet_full .sheet_container .info_container .stats_and_skills .skills_column .saving_throws {
   border: 2px solid red;
   padding: 5px;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 1vw;
 }
